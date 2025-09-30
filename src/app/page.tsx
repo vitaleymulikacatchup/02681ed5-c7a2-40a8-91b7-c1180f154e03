@@ -1,6 +1,6 @@
 "use client";
 import { SiteTheme, SiteThemeProvider } from '@/components/sections/ThemeProvider';
-import { NavbarLayoutSplitBottom as Navbar } from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
+import NavbarLayoutSplitBottom from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
 import VoidHero from '@/components/sections/layouts/hero/VoidHero';
 import BaseAbout from '@/components/sections/layouts/about/BaseAbout';
 import ImageFAQ from '@/components/sections/layouts/faq/ImageFAQ';
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <SiteThemeProvider theme={theme}>
       <div id="nav" data-section="nav">
-        <Navbar
+        <NavbarLayoutSplitBottom
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SzEkxKoNyIbQ4hnQYui6BHsfB/tmp/design-a-simple-high-contrast-logo-for-f-1759247269212-27b211a2.jpg"
           logoAlt="Frog Coin Logo"
           leftButtonText="Learn More"
@@ -67,8 +67,7 @@ export default function Home() {
       <div id="tokenomics" data-section="tokenomics">
         <ExpandingGridTokenomics
           title="Frog Coin Tokenomics"
-          description="Transparent and fair token distribution.
-          "
+          description="Transparent and fair token distribution."
           cardItems={[
             { id: 1, title: "Total Supply", description: "1 Billion Tokens" },
             { id: 2, title: "Market Cap", description: "$10 Million" },
