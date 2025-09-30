@@ -21,7 +21,6 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarLayoutSplitBottom
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SzEkxKoNyIbQ4hnQYui6BHsfB/tmp/design-a-simple-high-contrast-logo-for-f-1759247269212-27b211a2.jpg"
-          logoAlt="Frog Coin Logo"
           leftButtonText="Learn More"
           rightButtonText="BUY NOW"
           onLeftButtonClick={() => {}}
