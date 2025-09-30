@@ -23,6 +23,12 @@ export default function Home() {
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SzEkxKoNyIbQ4hnQYui6BHsfB/tmp/design-a-simple-high-contrast-logo-for-f-1759247269212-27b211a2.jpg"
           buttonText="Learn More"
           onButtonClick={() => {}}
+          navItems={[
+            { name: "Home", id: "home" },
+            { name: "About", id: "about" },
+            { name: "Tokenomics", id: "tokenomics" },
+            { name: "FAQs", id: "faq" },
+          ]}
         />
       </div>
       <div id="hero" data-section="hero">
