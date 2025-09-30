@@ -10,9 +10,9 @@ import ExpandingGridTokenomics from '@/components/sections/layouts/tokenomics/Ex
 import FooterLogoEmphasis from '@/components/footer/FooterLogoEmphasis';
 
 const theme: SiteTheme = {
-  styleVariant: "funAndTrendy",
-  colorTemplate: 1,
-  textAnimation: "highlight",
+  styleVariant: "futuristicAndOutOfBox",
+  colorTemplate: 2,
+  textAnimation: "slide",
 };
 
 export default function Home() {
@@ -42,16 +42,21 @@ export default function Home() {
       <div id="about" data-section="about">
         <BaseAbout
           title="About Frog Coin"
-          descriptions={["Frog Coin is a jungle-themed memecoin built for fun and community.", "Join us for clear steps to buy, playful visuals, and transparent tokenomics."]}
+          descriptions={[
+            "Frog Coin is a jungle-themed memecoin built for fun and community.",
+            "Join us for clear steps to buy, playful visuals, and transparent tokenomics."
+          ]}
         />
       </div>
-      <div id="faq" data-section="faq">
+      <div id="faq" data-section="faq" className="scroll-mt-24">
         <ImageFAQ
           image="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SzEkxKoNyIbQ4hnQYui6BHsfB/tmp/a-flat-cartoon-portrait-of-an-anthropomo-1759247267372-21aa6b52.jpg"
           imageAlt="Frog FAQ"
           items={[
             { title: "What is Frog Coin?", content: "Frog Coin is a fun memecoin created for our community!" },
             { title: "How to buy?", content: "Follow our simple guide on the site to purchase frog coins!" },
+            { title: "Where can I find more info?", content: "You can visit our social media channels for updates!" },
+            { title: "Is there a community?", content: "Yes! Join our Discord to connect with fellow frog lovers!" },
           ]}
         />
       </div>
